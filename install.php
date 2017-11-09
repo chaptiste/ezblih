@@ -11,17 +11,17 @@ $blih = @file_get_contents("files/blih.py");
 $blih_sh = @file_get_contents("files/blih");
 $ezb = @file_get_contents("files/ezb");
 
-if(!$blih)
+if(!$blih || !$blih_sh || !$ezb)
 {
-	die("Le fichier blih.py est introuvable. Veuillez re-telecharger le depo :\ngit clone https://github.com/Rikette/blih.git\n");
+	die("Fichiers manquants. Veuillez re-telecharger le depo :\ngit clone https://github.com/Rikette/blih.git\n");
 }
 
-if(file_exists("/bin/blih.py"))
+if(@file_exists("/bin/blih.py"))
 {
 	die("Blih est deja installe.\n");
 }
 
-if(file_put_contents('/bin/blih.py', $blih) !== false)
+if(@file_put_contents('/bin/blih.py', $blih) !== false)
 {
 	echo "/bin/blih.py => ok.\n";
 }
@@ -30,7 +30,7 @@ else
 	die("Erreur de l'ecriture du fichier blih.py\n");
 }
 
-if(file_put_contents('/bin/blih', $blih_sh) !== false)
+if(@file_put_contents('/bin/blih', $blih_sh) !== false)
 {
 	echo "/bin/blih => ok.\n";
 }
@@ -39,7 +39,7 @@ else
 	die("Erreur de l'ecriture du fichier bash blih\n");
 }
 
-if(file_put_contents('/bin/ezb', $ezb) !== false)
+if(@file_put_contents('/bin/ezb', $ezb) !== false)
 {
 	echo "/bin/ezb => ok.\n";
 }
@@ -48,7 +48,7 @@ else
 	die("Erreur de l'ecriture du fichier ezb\n");
 }
 
-if(file_put_contents('/bin/blih.config', $argv[1]) !== false)
+if(@file_put_contents('/bin/blih.config', $argv[1]) !== false)
 {
 	echo "/bin/blih.config => ok.\n";
 }
