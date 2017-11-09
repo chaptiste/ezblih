@@ -26,6 +26,7 @@ Script d'installation rapide de blih (l'installation avec PIP etant moins pratiq
 ## Utilisation des raccourcis
 	ezb [commande]
 Commandes disponnibles :
+* upload
 * create ```nom_du_depot```
 * setacl ```nom_du_depot user droits```
 * getacl ```nom_du_depot```

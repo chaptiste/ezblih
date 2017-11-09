@@ -1,11 +1,11 @@
 #!/bin/bash
 login=$(</bin/blih.config) 
 if [[ $# -eq 0 ]] ; then
-    echo 'Usage: ezb [command] (upload_key, create, setacl, getacl, delete, list, clone)'
+    echo 'Usage: ezb [command] (upload, create, setacl, getacl, delete, list, clone)'
     exit 0
 fi
 
-if [ $1 = 'upload_key' ]; then
+if [ $1 = 'upload' ]; then
 	blih -u $login sshkey upload
 elif [ $1 = 'create' ]; then
 	blih -u $login repository create $2
@@ -20,5 +20,5 @@ elif [ $1 = 'list' ]; then
 elif [ $1 = 'clone' ]; then
 	git clone git@git.epitech.eu:/$login/$2
 else
-	echo "Usage: ezb [command] (upload_key, create, setacl, getacl, delete, list, clone)"
+	echo "Usage: ezb [command] (upload, create, setacl, getacl, delete, list, clone)"
 fi
