@@ -16,10 +16,12 @@ Script d'installation rapide de blih (l'installation avec PIP etant moins pratiq
 	
 ### Execution du script d'installation
 	cd ezblih
+
 	sudo php install.php votre.login@epitech.eu
 	
 ### Upload cle ssh
 	ssh-keygen
+	
 (Presser 3 fois ```Enter```)
 
 	ezb upload
