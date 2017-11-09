@@ -1,0 +1,22 @@
+#!/bin/bash
+login=$(</bin/blih.config) 
+if [[ $# -eq 0 ]] ; then
+    echo 'Usage: ezb [command] (create, setacl, getacl, delete, list, clone)'
+    exit 0
+fi
+
+if [ $1 = 'create' ]; then
+	blih -u $login repository create $2
+elif [ $1 = 'setacl' ]; then
+	blih -u $login repository setacl $2 $3
+elif [ $1 = 'getacl' ]; then
+	blih -u $login repository getacl $2
+elif [ $1 = 'delete' ]; then
+	blih -u $login repository delete $2
+elif [ $1 = 'list' ]; then
+	blih -u $login repository list
+elif [ $1 = 'clone' ]; then
+	git clone git@git.epitech.eu:/$login/$2
+else
+	echo "Usage: ezb [command] (create, setacl, getacl, delete, list, clone)"
+fi
