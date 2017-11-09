@@ -21,6 +21,7 @@ Script d'installation rapide de blih (l'installation avec PIP etant moins pratiq
 ### Upload cle ssh
 	ssh-keygen
 (Presser 3 fois ```Enter```)
+
 	```ezb upload```
 	
 ## Utilisation des raccourcis
