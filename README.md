@@ -21,12 +21,12 @@ Script d'installation rapide de blih (l'installation avec PIP etant moins pratiq
 ## Utilisation des raccourcis
 	ezb [commande]
 Commandes disponnibles :
-* create
-* setacl
-* getacl
-* delete
+* create ```nom_du_depot```
+* setacl ```nom_du_depot user droits```
+* getacl ```nom_du_depot```
+* delete ```nom_du_depot```
 * list
-* clone
+* clone ```nom_du_depot```
 
 ## Configuration
 Pour changer le login, editer le fichier ```bin/blih.conf```.
