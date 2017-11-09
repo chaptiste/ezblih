@@ -15,8 +15,8 @@ Script d'installation rapide de blih (l'installation avec PIP etant moins pratiq
 	git clone https://github.com/Rikette/ezblih.git
 	
 ### Execution du script d'installation
-	cd blih
-	sudo php blih/install.php votre.login@epitech.eu
+	cd ezblih
+	sudo php install.php votre.login@epitech.eu
 	
 ## Utilisation des raccourcis
 	ezb [commande]
