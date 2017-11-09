@@ -12,7 +12,7 @@ Script d'installation rapide de blih (l'installation avec PIP etant moins pratiq
 * Git
 
 ### Recuperation des fichiers
-	git clone https://github.com/Rikette/blih.git
+	git clone https://github.com/Rikette/ezblih.git
 	
 ### Execution du script d'installation
 	cd blih
