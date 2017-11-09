@@ -31,6 +31,7 @@ Script d'installation rapide de blih (l'installation avec PIP etant moins pratiq
 	
 Commandes disponnibles :
 * upload
+* config ```login_epitech```
 * create ```nom_du_depot```
 * setacl ```nom_du_depot user droits```
 * getacl ```nom_du_depot```
@@ -39,4 +40,6 @@ Commandes disponnibles :
 * clone ```nom_du_depot```
 
 ## Configuration
-Pour changer le login, editer le fichier ```bin/blih.conf```.
+Pour changer le login :
+
+	sudo ezb config nouveau.login@epitech.eu
