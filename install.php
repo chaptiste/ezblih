@@ -63,4 +63,3 @@ shell_exec("chmod 755 /bin/ezb");
 shell_exec("chmod 755 /bin/blih.config");
 
 echo "Installation terminee.\n";
-shell_exec("blih");
