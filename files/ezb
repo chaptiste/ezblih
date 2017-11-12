@@ -43,7 +43,7 @@ elif [ $1 = 'delete' ]; then
 elif [ $1 = 'list' ]; then
 	blih -u $login repository list
 elif [ $1 = 'clone' ]; then
-	git clone git@git.epitech.eu:/chiocc_b/$2
+	git clone git@git.epitech.eu:/$login/$2
 elif [ $1 = 'config' ]; then
 	echo $2 > '/bin/blih.config'
 elif [ $1 = 'login' ]; then
