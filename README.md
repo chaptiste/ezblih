@@ -39,7 +39,19 @@ Commandes disponnibles :
 * list
 * clone ```nom_du_depot```
 
+Il est possible d'utiliser n'importe quelle autre commande blih :
+
+	ezb sshkey delete rikette@rikette
+
+qui revient a utiliser :
+
+	blih -u votre.login@epitech.eu sshkey delete rikette@rikette
+
 ## Configuration
 Pour changer le login :
 
 	sudo ezb config nouveau.login@epitech.eu
+
+Pour afficher le login :
+
+	ezb login

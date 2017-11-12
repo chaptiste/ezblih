@@ -43,10 +43,12 @@ elif [ $1 = 'delete' ]; then
 elif [ $1 = 'list' ]; then
 	blih -u $login repository list
 elif [ $1 = 'clone' ]; then
-	git clone git@git.epitech.eu:/$login/$2
+	git clone git@git.epitech.eu:/chiocc_b/$2
 elif [ $1 = 'config' ]; then
 	echo $2 > '/bin/blih.config'
-else
+elif [ $1 = 'login' ]; then
+	echo $login
+elif [ $1 = 'help' ]; then
 	printf '\033[1mNAME\033[0m
 	\033[1;32mezb\033[0m - Version simplifiee de la commande blih (Easy blih)
 
@@ -73,4 +75,6 @@ else
 	\033[0;34m\033[1mconfig\033[0m\033[0m=\033[1;35mLOGIN\033[0m
 		Change votre \033[1;35mLOGIN\033[0m utilise lors des commandes
 '
+else
+	blih -u $login $@
 fi
