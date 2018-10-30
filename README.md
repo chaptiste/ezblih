@@ -46,3 +46,8 @@ Créer ensuite le fichier `.env` avec comme contenu :
     BLIH_PASSWORD=votremdp
 
 Il est possible de renseigner uniquement le mail, dans ce cas seulement le mot de passe vous sera demandé.
+
+## Mise à jour
+
+    sudo npm update -g ezblih
+
