@@ -1,23 +1,16 @@
-# BLIH - Bocal Lightweight Interface for Humans
+# EZ Blih
 
-* Source et Documentation: [https://github.com/bocal/blih](https://github.com/bocal/blih)
-
-Script d'installation rapide de blih (l'installation avec PIP etant moins pratique et contient des erreurs a l'installation).
+Installation de Blih via NPM sans aucune dépendance (pas de python, full JS).	
 
 ## Installation
 
 ### Pre-requis
-* Python 3 avec le module "requests" (souvent avec votre distribution par default)
-* PHP en CLI
-* Git
+* [NodeJS](https://nodejs.org/en/download/)
 
-### Recuperation des fichiers
-	git clone https://github.com/Rikette/ezblih.git
-	
-### Execution du script d'installation
-	cd ezblih
+Je ne vais pas faire un tuto pour installer Node. Sous Windows / Mac c'est un simple installer, sous Linux utilisez le [gestionnaire de paquet de votre distribution.](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions-enterprise-linux-fedora-and-snap-packages)
 
-	sudo php install.php votre.login@epitech.eu
+### Installer le package en global
+	sudo npm i -g ezblih
 	
 ### Upload cle ssh
 	ssh-keygen
@@ -26,32 +19,32 @@ Script d'installation rapide de blih (l'installation avec PIP etant moins pratiq
 
 	ezb upload
 	
-## Utilisation des raccourcis
+## Commandes
 	ezb [commande]
 	
 Commandes disponnibles :
 * upload
-* config ```login_epitech```
+* list
+* ping
 * create ```nom_du_depot```
 * setacl ```nom_du_depot user droits```
 * getacl ```nom_du_depot```
 * delete ```nom_du_depot```
-* list
 * clone ```nom_du_depot```
 
-Il est possible d'utiliser n'importe quelle autre commande blih :
-
-	ezb sshkey delete rikette@rikette
-
-qui revient a utiliser :
-
-	blih -u votre.login@epitech.eu sshkey delete rikette@rikette
-
 ## Configuration
-Pour changer le login :
+Si vous êtes un gros flemmard et que vous ne souhaitez plus taper votre email et mot de passe a chaque commande, vous pouvez créer un fichier `.env` dans un dossier `ezblih` dans votre repertoire `home`.
 
-	sudo ezb config nouveau.login@epitech.eu
+`~/ezblih/.env`
 
-Pour afficher le login :
+Remplissez ensuite le fichier `.env` avec comme contenu :
 
-	ezb login
+    BLIH_EMAIL=votre.email@epitech.eu
+    BLIH_PASSWORD=votremdp
+
+Il est possible de renseigner uniquement le mail, dans ce cas seulement le mot de passe vous sera demandé.
+
+## Mise à jour
+
+    sudo npm update -g ezblih
+
