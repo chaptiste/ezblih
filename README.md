@@ -5,7 +5,7 @@ Installation de Blih via NPM sans aucune dépendance (pas de python, full JS).
 ## Installation
 
 ### Pre-requis
-* [NodeJS](https://nodejs.org/en/download/)
+* [NodeJS](https://nodejs.org/en/download/) - **Version 8 Minimum**
 
 Je ne vais pas faire un tuto pour installer Node. Sous Windows / Mac c'est un simple installer, sous Linux utilisez le [gestionnaire de paquet de votre distribution.](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions-enterprise-linux-fedora-and-snap-packages)
 
@@ -33,7 +33,7 @@ Commandes disponnibles :
 * clone ```nom_du_depot```
 
 ## Configuration
-Si vous êtes un gros flemmard et que vous ne souhaitez plus taper votre email et mot de passe a chaque commande, vous pouvez créer un fichier `.env` dans un dossier `ezblih` dans votre repertoire `home`.
+Si vous êtes un gros flemmard et que vous ne souhaitez plus taper votre email et mot de passe a chaque commande, vous pouvez créer un fichier `.env` dans un dossier `ezblih` que vous aurez également créé dans votre repertoire `home`.
 
 `~/ezblih/.env`
 
