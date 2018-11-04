@@ -33,14 +33,11 @@ Commandes disponnibles :
 * clone ```nom_du_depot```
 
 ## Configuration
-Si vous êtes un gros flemmard et que vous ne souhaitez plus taper votre email et mot de passe a chaque commande, vous pouvez créer un fichier `.env` à la racine du dossier d'installation du paquet.
-Sous Linux, le dossier devrait se situer sous `/usr/local/lib/node_modules/ezblih` ou `/usr/local/lib/node/ezblih` .
+Si vous êtes un gros flemmard et que vous ne souhaitez plus taper votre email et mot de passe a chaque commande, vous pouvez créer un fichier `.env` dans un dossier `ezblih` dans votre repertoire `home`.
 
-Pour savoir ou sont installés les paquets en global sous votre os, utilisez :
+`~/ezblih/.env`
 
-    npm root -g
-
-Créer ensuite le fichier `.env` avec comme contenu :
+Remplissez ensuite le fichier `.env` avec comme contenu :
 
     BLIH_EMAIL=votre.email@epitech.eu
     BLIH_PASSWORD=votremdp
